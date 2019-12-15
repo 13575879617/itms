@@ -1,0 +1,17 @@
+﻿<!--
+ ！！！ 解决WKWebView 和 UIWebView 加载相同的html，WKWebview字体会缩小问题
+ https://stackoverflow.com/questions/26102908/suppress-wkwebview-from-scaling-content-to-render-at-same-magnification-as-uiweb
+ -->
+<meta name="viewport" content="initial-scale=1.0"/>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name='apple-itunes-app' content='app-id=477927812; text/html; charset=utf-8' http-equiv="Content-Type">
+    <title>安装App</title>
+</head>
+<body>
+<!--  itms-services://?action=download-manifest&url= + plist文件的地址  -->
+    <a href='itms-services://?action=download-manifest&url=https://13575879617.github.io/itms/demo.plist'>一键安装</a>
+</body>
+</html>
