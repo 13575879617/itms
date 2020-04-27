@@ -80,7 +80,7 @@
 
 
 <div style="text-align:center;clear:both;">
-<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
+
 </div>
 <canvas id="pinkboard" ></canvas>
 <audio src="老男孩.mp3"  style="display: none" autoplay preload loop></audio>
@@ -343,14 +343,15 @@
             onResize();
             render();
         }, 10);
-
+alert(0);
 			document.addEventListener("WeixinJSBridgeReady", function () {
         WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
             network = e.err_msg.split(":")[1];  //结果在这里
             document.querySelector("audio[loop]").play();
+		alert(2);
         });
     }, false);
-
+alert(1);
     })(document.getElementById('pinkboard'));
 </script>
 <script type="javascript">
