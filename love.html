@@ -343,10 +343,13 @@ var ParticlePool = (function() {
     onResize();
     render();
   }, 10);
-      $("audio").get(0).play();
+      
 })(document.getElementById('pinkboard'));
 </script>
 <script>
+    window.onload=function(){
+        $("audio").get(0).play();
+    }
     // var date= new Date();
     // var d2 = date.toLocaleString();
     // var id = document.getElementById("time");
